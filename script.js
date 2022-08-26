@@ -10,6 +10,12 @@ var num = window.prompt("Include Numbers? Y/N");
 var s_char = window.prompt("Include Special Characters? Y/N");
 var randomString = "";
 
+if(pass_length<8){
+  console.log('Password length too short');
+}else if(pass_length>128){
+  console.log('Password too long');
+}
+
 lowercase.toUpperCase();
 uppercase.toUpperCase();
 num.toUpperCase();
